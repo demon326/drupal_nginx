@@ -59,7 +59,11 @@
 
 
 
-
+#################
+##Microcache drupal
+#################
+include /etc/nginx/microcache.conf;
+add_header X-Cache-Status $upstream_cache_status;
 #################
 ##Drupal config##
 #################
